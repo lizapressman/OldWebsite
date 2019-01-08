@@ -185,5 +185,10 @@ a:hover {
     float: none;
     width: 100%;
   }
+  .footer {
+    padding-top: 200px;
+    text-align: center;
+    background: white;
+}
 }
 }
