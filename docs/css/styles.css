@@ -148,13 +148,6 @@ a:hover {
   color: #363854;
 }
 
-.slider: img {
-    margin:0 auto;
-    width: 10%;
-    max-width: 200px;
-    min-width: 100px;
-}
-
 
 @media screen and (max-width: 950px) {
   .header {
@@ -186,7 +179,7 @@ a:hover {
     width: 100%;
   }
   .footer {
-    padding-top: 300px;
+    padding-top: 250px;
     text-align: center;
     background: white;
 }
