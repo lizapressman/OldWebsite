@@ -1,6 +1,5 @@
 div#main{
 width:100%;
-height:650px;
 margin:0 auto;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -30,11 +29,11 @@ margin-top:10px;
 height:35px;
 margin-bottom:25px;
 padding:10px;
-border:3px solid #2BC1F2
+border:3px solid #363854
 }
 textarea{
 width:100%;
-border:3px solid #2BC1F2;
+border:3px solid #363854;
 padding:10px;
 margin-bottom:25px;
 margin-top:10px;
@@ -44,7 +43,7 @@ resize:none
 input[type="submit"]{
 width:100%;
 padding:10px 45px;
-background-color:#2BC1F2;
+background-color:#363854;
 border:none;
 color:#fff;
 font-size:18px;
