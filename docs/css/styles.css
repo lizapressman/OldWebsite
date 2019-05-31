@@ -24,7 +24,7 @@ body {
   font-size: 40px;
 }
 
-.mySlides {
+.mySlides img{
   width: 300px;
   flex-shrink: 0;
   height: 100%;
