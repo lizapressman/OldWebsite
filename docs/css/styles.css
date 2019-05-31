@@ -24,12 +24,11 @@ body {
   font-size: 40px;
 }
 
-.mySlides img{
+.mySlides {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  border: 3px solid green;
 } 
 
 /* Column container */
