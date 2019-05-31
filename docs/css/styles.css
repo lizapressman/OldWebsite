@@ -25,10 +25,7 @@ body {
 }
 
 .mySlides{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  display:none;
 } 
 
 /* Column container */
