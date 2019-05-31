@@ -25,8 +25,14 @@ body {
 }
 
 .mySlides{
-  display:none;
+  width:100%;
 } 
+
+.bujocontainer {
+  position: relative;
+  width: 100%;
+  align-content: center;
+}
 
 /* Column container */
 .row {  
