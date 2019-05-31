@@ -24,11 +24,11 @@ body {
   font-size: 40px;
 }
 
-.mySlides{
+.mySlides img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
 
 
