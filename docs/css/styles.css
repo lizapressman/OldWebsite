@@ -24,12 +24,12 @@ body {
   font-size: 40px;
 }
 
-.mySlides img{
+.mySlides{
   width: 300px;
   flex-shrink: 0;
   height: 100%;
 } 
-.slide {
+.slider {
   width: 300px;
   height: 300px;
   display: flex;

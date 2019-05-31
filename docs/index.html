@@ -118,9 +118,9 @@
 				
 				<h3>Bullet Journaling</h3>
 				
-				<div class="slider">
-					<div class="slide"><img class="mySlides" src="bujo/1.jpg"></div>
-					<div class="slide"><img class="mySlides" src="bujo/2.jpeg"></div>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="bujo/1.jpg">
+					<img class="mySlides" src="bujo/2.jpeg">
 					<img class="mySlides" src="bujo/3.jpeg">
 					<img class="mySlides" src="bujo/4.jpeg">
 					<img class="mySlides" src="bujo/5.jpeg">
@@ -148,7 +148,31 @@
 					<img class="mySlides" src="bujo/27.jpeg">
 					<img class="mySlides" src="bujo/28.jpeg">
 					<img class="mySlides" src="bujo/29.jpeg">
+
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	
 			</div>
+
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+				
+				function plusDivs(n) {
+					showDivs(slideIndex += n);
+				}
+				
+				function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+				}
+				</script>
 
  	 		<br>
 
