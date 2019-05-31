@@ -25,9 +25,10 @@ body {
 }
 
 .mySlides{
-  width: 300px;
-  flex-shrink: 0;
-  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 } 
 .slider {
   display: block;
