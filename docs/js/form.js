@@ -5,8 +5,8 @@ createform.setAttribute("action", ""); // Setting Action Attribute on Form
 createform.setAttribute("method", "post"); // Setting Method Attribute on Form
 x.appendChild(createform);
 
-var heading = document.createElement('h3'); // Heading of Form
-heading.innerHTML = "Send me a message:";
+var heading = document.createElement('h2'); // Heading of Form
+heading.innerHTML = "Write me an email";
 createform.appendChild(heading);
 
 var line = document.createElement('hr'); // Giving Horizontal Row After Heading
@@ -27,17 +27,17 @@ createform.appendChild(inputelement);
 var linebreak = document.createElement('br');
 createform.appendChild(linebreak);
 
-// var emaillabel = document.createElement('label'); // Create Label for E-mail Field
-// emaillabel.innerHTML = "Your Email : ";
-// createform.appendChild(emaillabel);
+var subject = document.createElement('label'); // Create subject
+subject.innerHTML = "Subject : ";
+createform.appendChild(subject);
 
-// var emailelement = document.createElement('input'); // Create Input Field for E-mail
-// emailelement.setAttribute("type", "text");
-// emailelement.setAttribute("name", "demail");
-// createform.appendChild(emailelement);
+var subjectelement = document.createElement('input'); // Create Input Field for E-mail
+subjectelement.setAttribute("type", "text");
+subjectelement.setAttribute("name", "demail");
+createform.appendChild(subjectelement);
 
-// var emailbreak = document.createElement('br');
-// createform.appendChild(emailbreak);
+var emailbreak = document.createElement('br');
+createform.appendChild(emailbreak);
 
 var messagelabel = document.createElement('label'); // Append Textarea
 messagelabel.innerHTML = "Your Message : ";
@@ -57,11 +57,11 @@ submitelement.setAttribute("value", "Submit");
 submitelement.onclick = function() {sendMail()};
 
 function sendMail() {
-	var link = 'mailto:lpressma@u.rochester.edu?subject=Message from '
+	var link = 'mailto:lpressma@u.rochester.edu?subject='+subjectelement.value+' from '
              +inputelement.value
              +'&body='+texareaelement.value;
     window.location.href = link;
-	document.getElementById("main").innerHTML = "THANK YOU!";
+	document.getElementById("main").innerHTML = "Thanks for your message!";
 }
 
 createform.appendChild(submitelement);
